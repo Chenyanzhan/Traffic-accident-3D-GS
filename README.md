@@ -1,120 +1,44 @@
 
 
-# ProjectName
+# A Virtual-Real-Fusion Framework for Intelligent 3D Traffic Accident Reconstruction
 
-ProjectName and Description
+This study proposes a novel virtual-real-fusion simulation framework that integrates traffic accident generation, unmanned aerial vehicle (UAV)-based image collection and a 3D traffic accident reconstruction pipeline with advanced computer vision techniques and unsupervised 3D point clouds clustering algorithms.
 
-<!-- PROJECT SHIELDS -->
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-<!-- PROJECT LOGO -->
-<br />
-
-<p align="center">
-  <a href="https://github.com/shaojintian/Best_README_template/">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">"完美的"README模板</h3>
-  <p align="center">
-    一个"完美的"README模板去快速开始你的项目！
-    <br />
-    <a href="https://github.com/shaojintian/Best_README_template"><strong>探索本项目的文档 »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/shaojintian/Best_README_template">查看Demo</a>
-    ·
-    <a href="https://github.com/shaojintian/Best_README_template/issues">报告Bug</a>
-    ·
-    <a href="https://github.com/shaojintian/Best_README_template/issues">提出新特性</a>
-  </p>
-
-</p>
-
-
- 本篇README.md面向开发者
- 
 ## 目录
 
-- [上手指南](#上手指南)
-  - [开发前的配置要求](#开发前的配置要求)
-  - [安装步骤](#安装步骤)
-- [文件目录说明](#文件目录说明)
-- [开发的架构](#开发的架构)
-- [部署](#部署)
-- [使用到的框架](#使用到的框架)
-- [贡献者](#贡献者)
-  - [如何参与开源项目](#如何参与开源项目)
-- [版本控制](#版本控制)
+
+- [开发前的配置要求](#开发前的配置要求)
+- [Running](#Running)
+- [RenderingForTown03](#RenderingForTown03)
+- [RenderingForTown04](#RenderingForTown04)
+- [RenderingForTown10](#RenderingForTown10)
 - [作者](#作者)
-- [鸣谢](#鸣谢)
-
-### 上手指南
-
-请将所有链接中的“shaojintian/Best_README_template”改为“your_github_name/your_repository”
 
 
+### 开发前的配置要求
 
-###### 开发前的配置要求
+###### Hardware Requirements
 
-1. xxxxx x.x.x
-2. xxxxx x.x.x
+- CUDA-ready GPU with Compute Capability 7.0+
+- 24 GB VRAM (to train to paper evaluation quality)
+- Please see FAQ for smaller VRAM configurations
 
-###### **安装步骤**
+###### Software Requirements
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+- Conda (recommended for easy setup)
+- C++ Compiler for PyTorch extensions (we used Visual Studio 2019 for Windows)
+- CUDA SDK 11 for PyTorch extensions, install *after* Visual Studio (we used 11.8, **known issues with 11.6**)
+- C++ Compiler and CUDA SDK must be compatible
 
-```sh
-git clone https://github.com/shaojintian/Best_README_template.git
+### Running
+To run the optimizer, simply use
+
+```shell
+python train.py -s /content/gaussian-splatting/carla/
 ```
 
-### 文件目录说明
-eg:
+### 3D-GS renderings for Town03
 
-```
-filetree 
-├── ARCHITECTURE.md
-├── LICENSE.txt
-├── README.md
-├── /account/
-├── /bbs/
-├── /docs/
-│  ├── /rules/
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-├── manage.py
-├── /oa/
-├── /static/
-├── /templates/
-├── useless.md
-└── /util/
-
-```
-
-
-
-
-
-### 开发的架构 
-
-请阅读[ARCHITECTURE.md](https://github.com/shaojintian/Best_README_template/blob/master/ARCHITECTURE.md) 查阅为该项目的架构。
-
-### 部署
-
-暂无
-
-### 使用到的框架
-
-- [xxxxxxx](https://getbootstrap.com)
-- [xxxxxxx](https://jquery.com)
-- [xxxxxxx](https://laravel.com)
 
 ### 贡献者
 
@@ -158,18 +82,3 @@ xxx@xxxx
 - [GitHub Pages](https://pages.github.com)
 - [Animate.css](https://daneden.github.io/animate.css)
 - [xxxxxxxxxxxxxx](https://connoratherton.com/loaders)
-
-<!-- links -->
-[your-project-path]:shaojintian/Best_README_template
-[contributors-shield]: https://img.shields.io/github/contributors/shaojintian/Best_README_template.svg?style=flat-square
-[contributors-url]: https://github.com/shaojintian/Best_README_template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/shaojintian/Best_README_template.svg?style=flat-square
-[forks-url]: https://github.com/shaojintian/Best_README_template/network/members
-[stars-shield]: https://img.shields.io/github/stars/shaojintian/Best_README_template.svg?style=flat-square
-[stars-url]: https://github.com/shaojintian/Best_README_template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/shaojintian/Best_README_template.svg?style=flat-square
-[issues-url]: https://img.shields.io/github/issues/shaojintian/Best_README_template.svg
-[license-shield]: https://img.shields.io/github/license/shaojintian/Best_README_template.svg?style=flat-square
-[license-url]: https://github.com/shaojintian/Best_README_template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/shaojintian
