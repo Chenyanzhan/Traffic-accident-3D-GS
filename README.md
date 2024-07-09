@@ -39,9 +39,11 @@ python train.py -s /content/gaussian-splatting/carla/
 
 ### Renderings for Town03
 
+![ezgif com-optimize](https://github.com/Chenyanzhan/Traffic-accident-3D-GS/assets/59226366/bb37544d-94fd-4078-a43c-c7ef89fe3b80)
 
 ### Renderings for Town04
 
+![ezgif com-optimize (1)](https://github.com/Chenyanzhan/Traffic-accident-3D-GS/assets/59226366/d72d112e-f1ee-4fcd-9e52-2e328ad744ab)
 
 ### Renderings for Town10
 
