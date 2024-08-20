@@ -9,7 +9,7 @@ This study proposes a novel virtual-real-fusion simulation framework that integr
 
 - [开发前的配置要求](#开发前的配置要求)
 - [数据集准备](#数据集准备)
-- [Train the 3D-GS](#Train the 3D-GS)
+- [Train_the_3D-GS](#Train_the_3D-GS)
 - [RenderingForTown03](#RenderingForTown03)
 - [RenderingForTown04](#RenderingForTown04)
 - [RenderingForTown10](#RenderingForTown10)
