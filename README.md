@@ -30,15 +30,29 @@ This study proposes a novel virtual-real-fusion simulation framework that integr
 - C++ Compiler for PyTorch extensions (we used Visual Studio 2019 for Windows)
 - CUDA SDK 11 for PyTorch extensions, install *after* Visual Studio (we used 11.8, **known issues with 11.6**)
 - C++ Compiler and CUDA SDK must be compatible
+- CARLA 0.9.13
 
 ### 数据集准备
 The traffic accident dataset for this work can be downloaded at https://pan.baidu.com/s/16G-0fzaGHNX-TKDDbVxokw with the extraction code a60n
+If you want to generate the dataset by yourself, please use
+```shell
+python generate_traffic.py -n 30 -w 0 --safe  # generate traffic flow
+python manual_control.py      # control ego vehicle
+python Traffic_accident_image_collect.py # generate UAV images
+```
+
 
 ### Train the 3D-GS
 To run the optimizer, simply use
 
 ```shell
 python train.py -s /content/gaussian-splatting/carla/
+```
+
+To visualize the novel views, please use
+
+```shell
+python SIBR_viewer.py
 ```
 
 ### Renderings for Town03
