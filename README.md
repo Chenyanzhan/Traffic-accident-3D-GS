@@ -8,7 +8,8 @@ This study proposes a novel virtual-real-fusion simulation framework that integr
 
 
 - [开发前的配置要求](#开发前的配置要求)
-- [Running](#Running)
+- [数据集准备](#数据集准备)
+- [Train the 3D-GS](#Train the 3D-GS)
 - [RenderingForTown03](#RenderingForTown03)
 - [RenderingForTown04](#RenderingForTown04)
 - [RenderingForTown10](#RenderingForTown10)
@@ -30,7 +31,10 @@ This study proposes a novel virtual-real-fusion simulation framework that integr
 - CUDA SDK 11 for PyTorch extensions, install *after* Visual Studio (we used 11.8, **known issues with 11.6**)
 - C++ Compiler and CUDA SDK must be compatible
 
-### Running
+### 数据集准备
+The traffic accident dataset for this work can be downloaded at https://pan.baidu.com/s/16G-0fzaGHNX-TKDDbVxokw with the extraction code a60n
+
+### Train the 3D-GS
 To run the optimizer, simply use
 
 ```shell
